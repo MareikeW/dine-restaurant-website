@@ -1,0 +1,110 @@
+:root {
+    --primary-beaver: rgb(158, 127, 102);
+    --primary-cod-gray: rgb(17, 17, 17);
+    --secondary-mirage: rgb(23, 25, 43);
+    --secondary-ebony-clay: rgb(36, 43, 55);
+    --secondary-shuttle-gray: rgb(92, 103, 121);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+h1 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -0.8;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: -0.5;
+    font-weight: 700;
+}
+
+h3 .long {
+    font-family: 'Spartan', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.22;
+    font-weight: 700;
+}
+
+h3 .short {
+    font-family: 'Spartan', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 2;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.22;
+    font-weight: 400;
+}
+
+button {
+    font-family: 'Spartan', sans-serif;
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+}
+
+/* Homepage Mobile */
+.hero-img {
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    width: 327px;
+    height: 364px;
+    text-align: center;
+    top: 12em;
+    color: #fff;
+    left: 24px;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.hero-subtitle {
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.hero-paragraph {
+    font-size: 14px;
+    padding-left: 3px;
+    padding-right: 3px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.hero-button {
+    background-color: var(--primary-cod-gray);
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1.5em 4em;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-weight: 600;
+}
