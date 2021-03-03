@@ -52,6 +52,7 @@ body {
     line-height: 30px;
     letter-spacing: -0.22;
     font-weight: 400;
+    width: 375px;
 }
 
 button {
@@ -107,4 +108,78 @@ button:focus {
     letter-spacing: 1px;
     margin-top: 30px;
     font-weight: 600;
+}
+
+/* Info-Section */
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 327px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.info-cards:first-of-type {
+    margin-top: -80px;
+}
+
+.info-img {
+    -webkit-box-shadow: -1px 6px 15px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 15px -7px rgba(0,0,0,0.75);
+    box-shadow: -1px 6px 15px -7px rgba(0,0,0,0.75);
+    z-index: 5;
+}
+
+.pattern-divider {
+    width: 80px;
+    margin: 48px auto 30px auto;
+}
+
+.info-titles {
+    font-size: 1.8em;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.info-content {
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 15px;
+}
+
+/* Menu Section */
+.menu-section {
+    background-color: var(--primary-cod-gray);
+    color: #fff;
+    text-align: center;
+}
+
+.menu-card {
+    width: 327px;
+    margin: 0 auto;
+}
+
+.menu-title {
+    font-size: 1.7em;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.dish-titles {
+    line-height: 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.menu-content {
+    font-size: 15px;
+    margin-bottom: 80px;
+}
+
+.dish-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    margin-bottom: 60px;
 }
