@@ -183,3 +183,31 @@ button:focus {
     font-size: 15px;
     margin-bottom: 60px;
 }
+
+/* Events Section */
+.events-section {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.event-image {
+    -webkit-box-shadow: -1px 6px 15px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 15px -7px rgba(0,0,0,0.75);
+    box-shadow: -1px 6px 15px -7px rgba(0,0,0,0.75);
+    margin-bottom: 40px;
+}
+
+.event-list {
+    list-style: none;
+   
+}
+
+.event-list-item {
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+.active {
+    border-bottom: solid 1px var(--primary-beaver);
+    
+}
