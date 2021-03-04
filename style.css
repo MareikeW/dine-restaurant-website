@@ -162,21 +162,31 @@ button:focus {
     background-color: var(--primary-cod-gray);
     color: #fff;
     text-align: center;
-    height: 1720px;
+    
+}
+
+.menu-section .pattern-divider {
+    margin-top: 72px;
+    margin-bottom: 32px;
 }
 
 .menu-card {
     width: 327px;
-    margin: 0 auto;
+    margin: 64px auto;
 }
 
 .menu-intro {
-    height: 235px;
     margin-bottom: 64px;
 }
 
 .menu-item {
-    height: 418px;
+    border-bottom: 0.5px solid var(--primary-beaver);
+    padding-bottom: 40px;
+    margin-top: 30px;
+}
+
+.menu-item:last-of-type {
+    padding-bottom: 72px;
 }
 
 .menu-title {
@@ -184,13 +194,19 @@ button:focus {
     line-height: 40px;
     letter-spacing: -0.4px;
     font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.dish-titles {
+    padding-top: 28px;
+    padding-bottom: 15px;
 }
 
 .menu-content {
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
-    letter-spacing: -0.19px;
+    letter-spacing: -0.19px; 
 }
 
 .dish-content {
@@ -198,6 +214,8 @@ button:focus {
     line-height: 28px;
     letter-spacing: -0.19px;
     font-weight: 400;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 /* Events Section */
@@ -224,27 +242,35 @@ button:focus {
 
 .event-list-item {
     text-transform: uppercase;
-    margin: 1em;
-    color: var(--primary-beaver);
-    opacity: 0.5;
+    margin: 16px;
     font-weight: 600;
     font-size: 14px;
     line-height: 28px;
+    letter-spacing: 2px;
+    color: #4c4c4c;
+    opacity: 0.5;
 }
 
 .event-details {
     display: none;
     width: 327px;
     margin: 0 auto;
+    margin-top: 8px;
 }
 
 .event-details h2 {
     font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.4px;
 }
 
 .event-details p {
     font-size: 15px;
     line-height: 25px;
+    letter-spacing: -0.19px;
+    font-weight: 400;
+    margin-top: 10px;
 }
 
 .event-button {
@@ -278,8 +304,7 @@ button:focus {
 .active {
     position: relative;
     margin-bottom: -2px;
-    color: var(--secondary-mirage);
-    opacity: .8;
+    opacity: 1;
 }
 
 .active::after {
