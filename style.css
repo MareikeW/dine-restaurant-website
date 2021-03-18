@@ -61,6 +61,12 @@ body {
     }
 }
 
+@media (min-width: 1440px) {
+    body {
+        width: 1440px;
+    }
+}
+
 button {
     font-family: 'Spartan', sans-serif;
 }
@@ -143,9 +149,42 @@ button:focus {
     }
 }
 
+@media (min-width: 1440px) {
+    .hero-section {
+        height: 820px;
+        background-image: url(./images/homepage/hero-bg-desktop.jpg);
+    }
+
+    .hero-text {
+        left: 165px;
+        top: 258px;
+        text-align: left; 
+    }
+
+    .hero-text img {
+        position: absolute;
+        top: -233px;
+    }
+
+    .hero-subtitle {
+        width: 523px;
+        font-size: 64px;
+        line-height: 72px;
+        letter-spacing: -0.8px;  
+    }
+
+    .hero-paragraph {
+        width: 445px;
+    }
+}
+
 /* Info-Section */
 .info-section {
     height: 1454px;
+}
+
+.info-stripes {
+    display: none;
 }
 
 .info-cards {
@@ -203,6 +242,14 @@ button:focus {
     .info-section {
         position: relative;
         height: 1490px;
+    }
+
+    .info-stripes {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        right: 40px;
+        bottom: 480px;
     }
 
     .info-cards {
@@ -265,6 +312,89 @@ button:focus {
         font-weight: 700;
         padding-left: 1em;
         padding-right: 1em;
+    }
+    
+    .info-content {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.22px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .info-section {
+        position: relative;
+        height: 1411px;
+    }
+
+    .info-stripes {
+        bottom: 350px;
+    }
+
+    .info-cards {
+        width: 573px;
+        height: 673px;
+        margin-bottom: 120px;
+    }
+    
+    .info-img {
+        width: 540px;
+        height: 720px;
+    }
+
+    #info-img-first {
+        background-image: url(./images/homepage/enjoyable-place-desktop.jpg);
+        position: absolute;
+        left: 165px;
+    }
+
+    #info-img-first::after {
+        content: "";
+        background-color: #5c6779;
+        width: 895px;
+        height: 340px;
+        position: absolute;
+        left: -165px;
+        top: 250px;
+        border-top-right-radius: 80px;
+    }
+    
+    #info-img-second {
+        background-image: url(./images/homepage/locally-sourced-desktop.jpg);
+        position: absolute;
+        right: 165px;
+    }
+
+    #info-img-second::after {
+        width: 895px;
+        height: 320px;
+        bottom: 90px;
+        right: -165px;
+        border-top-left-radius: 100px;
+    }
+
+    #info-card-text-one {
+        position: absolute;
+        top: 50px;
+        right: 150px;
+        text-align: left;
+    }
+
+    #info-card-text-two {
+        position: absolute;
+        bottom: 300px;
+        left: 150px;
+        text-align: left;
+    }
+    
+    .info-titles {
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+        font-weight: 700;
+        padding-left: 0;
+        padding-right: 2em;
     }
     
     .info-content {
@@ -448,10 +578,54 @@ button:focus {
     }
 }
 
+@media (min-width: 1440px) {
+    .menu-section {
+        margin-top: -100px;
+        height: 761px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section .pattern-divider {
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+    
+    .menu-card {
+        display: flex;
+        width: 1110px;
+        height: 441px;
+        margin-top: 200px;
+    }
+
+    .menu-intro {
+        text-align: left;
+        margin: 0;
+        margin-right: 126px;
+        margin-top: -20px;
+    }
+    
+    .menu-item {
+        position: relative;
+        padding-bottom: 24px;
+    }
+
+    .menu-item:last-of-type {
+        border: none;
+    }
+
+    
+}
+
 /* Events Section */
 .events-section {
     text-align: center;
     margin-top: 80px;
+}
+
+.event-stripes {
+    display: none;
 }
 
 .event-images {
@@ -524,6 +698,24 @@ button:focus {
 
 #event-family {
     display: block;
+    background-image: url(./images/homepage/family-gathering-mobile.jpg);
+    background-repeat: no-repeat;
+    width: 326px;
+    height: 400px;
+}
+
+#event-special {
+    background-image: url(./images/homepage/special-events-mobile.jpg);
+    background-repeat: no-repeat;
+    width: 326px;
+    height: 400px;
+}
+
+#event-social {
+    background-image: url(./images/homepage/social-events-mobile.jpg);
+    background-repeat: no-repeat;
+    width: 326px;
+    height: 400px;
 }
 
 .event-list-item:hover,
@@ -550,6 +742,183 @@ button:focus {
 .event-details:last-of-type {
     margin-top: 30px;
 }
+
+@media (min-width: 768px) {   
+    .event-images {
+        margin-bottom: 40px;
+        margin-left: 97px;
+    }
+
+    .events-section {
+        position: relative;
+    }
+
+    .event-stripes {
+        display: block;
+        z-index: 20;
+        position: absolute;
+        left: 39px;
+        top: -40px;
+    }
+
+    .event-images::after {
+        content: "";
+        background-color: #5c6779;
+        width: 384px;
+        height: 320px;
+        position: absolute;
+        left: 0;
+        top: -80px;
+        opacity: 0.08;
+        border-top-right-radius: 80px;
+    }
+
+    .event-list-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .event-details {
+        display: none;
+        width: 457px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    
+    .event-details h2 {
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+    }
+    
+    .event-details p {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.22px;
+    }
+    
+    #event-family {
+        background-image: url(./images/homepage/family-gathering-tablet.jpg);
+        width: 573px;
+        height: 360px;
+    }
+    
+    #event-special {
+        background-image: url(./images/homepage/special-events-tablet.jpg);
+        width: 573px;
+        height: 360px;
+    }
+    
+    #event-social {
+        background-image: url(./images/homepage/social-events-tablet.jpg);
+        width: 573px;
+        height: 360px;
+    }
+    
+    .active::after {
+        left: 33%;
+        bottom: 8px;
+    }
+}
+
+@media (min-width: 1440px) { 
+    .events-section {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .event-stripes {
+        display: block;
+        z-index: 20;
+        position: absolute;
+        left: 39px;
+        top: -40px;
+    }
+
+    .events-container {
+        display: grid;
+        grid-template-areas: 
+        "image text"
+        "image list"
+        "image list";
+        
+        background-color: yellow;
+        height: 600px;
+        margin-bottom: 160px;
+    }
+
+    .event-images {
+        grid-area: image;
+        margin-left: 0;
+    }
+
+    .event-images::after {
+        content: "";
+        background-color: #5c6779;
+        width: 600px;
+        height: 320px;
+        position: absolute;
+        left: 0;
+        top: -80px;
+        opacity: 0.08;
+        border-top-right-radius: 80px;
+    }
+
+    .event-list-container {
+        grid-area: list;
+        flex-direction: column;
+        background-color: red;
+        
+    }
+    
+    .event-details {
+        display: none;
+        width: 445px;
+        height: 288px;
+        margin: 0 auto;
+        margin-top: 40px;
+        grid-area: text;
+        background-color: pink;
+    }
+    
+    .event-details h2 {
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+    }
+    
+    .event-details p {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.22px;
+    }
+    
+    #event-family {
+        background-image: url(./images/homepage/family-gathering-desktop.jpg);
+        width: 540px;
+        height: 600px;
+    }
+    
+    #event-special {
+        background-image: url(./images/homepage/special-events-desktop.jpg);
+        width: 540px;
+        height: 600px;
+    }
+    
+    #event-social {
+        background-image: url(./images/homepage/social-events-desktop.jpg);
+        width: 540px;
+        height: 600px;
+    }
+    
+    .active::after {
+        left: 33%;
+        bottom: 8px;
+    }
+}
+
 
 /* Reservation Link */
 .reservation-section {
@@ -583,6 +952,22 @@ button:focus {
     margin-bottom: 100px;
 }
 
+@media (min-width: 768px) {
+    .reservation-section {
+        background-image: url(./images/booking/hero-bg-tablet.jpg);
+        height: 272px;
+    }
+    
+    .reservation-section h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+        color: #fff;
+        padding-top: 65px;
+    }
+}
+
 /* Footer */
 footer {
     background-color: #000;
@@ -607,4 +992,28 @@ footer p {
     font-size: 14px;
     padding-left: 24px;
     padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-container {
+        display: flex;
+        text-align: left;
+        width: 689px;
+        height: 200px;
+        position: relative;
+    }
+
+    .footer-logo {
+        position: absolute;
+        top: -78px;
+    }
+
+    .footer-text {
+        padding-left: 200px;
+    }
 }

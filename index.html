@@ -25,19 +25,20 @@
   <section class="info-section">
     <div class="info-cards">
       <div class="info-img" id="info-img-first"></div>
-      <div class="info-card-text">
-        <img src="./images/patterns/pattern-divide.svg" alt="patter divider" class="pattern-divider">
+      <div class="info-card-text" id="info-card-text-one">
+        <img src="./images/patterns/pattern-divide.svg" alt="pattern divider" class="pattern-divider">
         
         <h2 class="info-titles">Enjoyable place for all the family</h2>
     
         <p class="info-content">Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange 
           a tour of the farm before your meal.</p>
       </div>
-      </div>
+    </div>
 
+    <img src="./images/patterns/pattern-lines.svg" alt="Six horizontal stripes" class="info-stripes" />
     <div class="info-cards">
       <div class="info-img" id="info-img-second"></div>
-      <div class="info-card-text">
+      <div class="info-card-text" id="info-card-text-two">
         <img src="./images/patterns/pattern-divide.svg" alt="patter divider" class="pattern-divider">
         
         <h2 class="info-titles">The most locally sourced food</h2>
@@ -87,37 +88,41 @@
   </section>
 
   <section class="events-section">
-    <div class="event-images">
-      <img src="./images/homepage/family-gathering-mobile.jpg" alt="Family Gathering with food." id="event-family" class="event-image"/>
-      <img src="./images/homepage/special-events-mobile.jpg" alt="Family Dinner outside." id="event-special" class="event-image"/>
-      <img src="./images/homepage/social-events-mobile.jpg" alt="Dinnertable with wine glasses on top." id="event-social" class="event-image" />
-    </div>
+    <img src="./images/patterns/pattern-lines.svg" alt="Six horizontal stripes" class="event-stripes" />
 
-    <ul class="event-list-container">
-        <li class="event-list-item active" onclick="showEvent(event, 'event-family', 'event-family-details')">Family Gathering</li>
-        <li class="event-list-item" onclick="showEvent(event, 'event-special', 'event-special-details')">Special Events</li>
-        <li class="event-list-item" onclick="showEvent(event, 'event-social', 'event-social-details')">Social Events</li>
-    </ul>
+    <div class="events-container">
+      <div class="event-images">
+        <div id="event-family" class="event-image"></div>
+        <div id="event-special" class="event-image"></div>
+        <div id="event-social" class="event-image"></div>
+      </div>
 
-    <div class="event-details" id="event-family-details">
-      <h2>Family Gathering</h2>
-      <p>We love catering for entire families. So please bring everyone along for a special meal with your 
-          loved ones. We’ll provide a memorable experience for all.</p>
-      <button class="event-button">Book a table</button>
-    </div>
+      <ul class="event-list-container">
+          <li class="event-list-item active" onclick="showEvent(event, 'event-family', 'event-family-details')">Family Gathering</li>
+          <li class="event-list-item" onclick="showEvent(event, 'event-special', 'event-special-details')">Special Events</li>
+          <li class="event-list-item" onclick="showEvent(event, 'event-social', 'event-social-details')">Social Events</li>
+      </ul>
 
-    <div class="event-details" id="event-special-details">
-      <h2>Special Events</h2>
-      <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. 
-        We’ll be sure to mark your special date with an unforgettable meal.</p>
-      <button class="event-button">Book a table</button>
-    </div>
+      <div class="event-details" id="event-family-details">
+        <h2>Family Gathering</h2>
+        <p>We love catering for entire families. So please bring everyone along for a special meal with your 
+            loved ones. We’ll provide a memorable experience for all.</p>
+        <button class="event-button">Book a table</button>
+      </div>
 
-    <div class="event-details" id="event-social-details">
-      <h2>Social Events</h2>
-      <p>Are you looking to have a larger social event? No problem! We’re more than happy to cater for big 
-        parties. We’ll work with you to make your event a hit with everyone.</p>
-      <button class="event-button">Book a table</button>
+      <div class="event-details" id="event-special-details">
+        <h2>Special Events</h2>
+        <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. 
+          We’ll be sure to mark your special date with an unforgettable meal.</p>
+        <button class="event-button">Book a table</button>
+      </div>
+
+      <div class="event-details" id="event-social-details">
+        <h2>Social Events</h2>
+        <p>Are you looking to have a larger social event? No problem! We’re more than happy to cater for big 
+          parties. We’ll work with you to make your event a hit with everyone.</p>
+        <button class="event-button">Book a table</button>
+      </div>
     </div>
   </section>
   
@@ -127,21 +132,27 @@
   </section>
   
   <footer>
-    <img src="./images/logo.svg" alt="dine"/>
-    <p>
-      Marthwaite, Sedbergh
-      <br>
-      Cumbria
-      <br>
-      +00 44 123 4567
-    </p>
-    <p>
-      Open Times
-      <br>
-      Mon - Fri: 09:00 AM - 10:00 PM
-      <br>
-      Sat - Sun: 09:00 AM - 11:30 PM
-    </p>
+    <div class="footer-container"> 
+      <div class="footer-logo">
+        <img src="./images/logo.svg" alt="dine logo"/>
+      </div>
+      <div class="footer-text">
+        <p>
+          Marthwaite, Sedbergh
+          <br>
+          Cumbria
+          <br>
+          +00 44 123 4567
+        </p>
+        <p>
+          Open Times
+          <br>
+          Mon - Fri: 09:00 AM - 10:00 PM
+          <br>
+          Sat - Sun: 09:00 AM - 11:30 PM
+        </p>
+      </div>
+    </div>
   </footer>
   <script src="./index.js"></script>
 </body>
