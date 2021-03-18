@@ -53,6 +53,8 @@ body {
     letter-spacing: -0.22;
     font-weight: 400;
     width: 375px;
+    background-color: #000;
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -63,7 +65,7 @@ body {
 
 @media (min-width: 1440px) {
     body {
-        width: 1440px;
+        min-width: 1440px;
     }
 }
 
@@ -81,6 +83,7 @@ button:focus {
     height: 748px;
     background-image: url(./images/homepage/hero-bg-mobile.jpg);
     position: relative;
+    background-color: #000;
 }
 
 .hero-text {
@@ -181,6 +184,7 @@ button:focus {
 /* Info-Section */
 .info-section {
     height: 1454px;
+    background-color: #fff;
 }
 
 .info-stripes {
@@ -613,15 +617,14 @@ button:focus {
 
     .menu-item:last-of-type {
         border: none;
-    }
-
-    
+    }  
 }
 
 /* Events Section */
 .events-section {
     text-align: center;
     margin-top: 80px;
+    background-color: #fff;
 }
 
 .event-stripes {
@@ -833,20 +836,21 @@ button:focus {
         display: block;
         z-index: 20;
         position: absolute;
-        left: 39px;
-        top: -40px;
+        left: 120px;
+        top: 20px;
     }
 
     .events-container {
         display: grid;
         grid-template-areas: 
-        "image text"
-        "image list"
-        "image list";
-        
-        background-color: yellow;
+        "image . text"
+        "image . list"
+        "image . list";
+        grid-column-gap: 65px;
         height: 600px;
         margin-bottom: 160px;
+        margin-top: 60px;
+        
     }
 
     .event-images {
@@ -857,7 +861,7 @@ button:focus {
     .event-images::after {
         content: "";
         background-color: #5c6779;
-        width: 600px;
+        width: 500px;
         height: 320px;
         position: absolute;
         left: 0;
@@ -869,7 +873,11 @@ button:focus {
     .event-list-container {
         grid-area: list;
         flex-direction: column;
-        background-color: red;
+        height: 108px;
+        text-align: left;
+    }
+
+    .event-list-item {
         
     }
     
@@ -880,7 +888,7 @@ button:focus {
         margin: 0 auto;
         margin-top: 40px;
         grid-area: text;
-        background-color: pink;
+        text-align: left;
     }
     
     .event-details h2 {
@@ -912,10 +920,18 @@ button:focus {
         width: 540px;
         height: 600px;
     }
+
+    .active {
+        position: relative;
+        margin-bottom: 0px;
+        opacity: 1;
+    }
     
     .active::after {
-        left: 33%;
-        bottom: 8px;
+        height: 1px;
+        width: 95px;
+        left: -101px;
+        bottom: 15px;
     }
 }
 
@@ -968,6 +984,25 @@ button:focus {
     }
 }
 
+@media (min-width: 1440px) {
+    .reservation-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url(./images/booking/hero-bg-desktop.jpg);
+        height: 248px;
+    }
+
+    .reservation-section h1 {
+        padding-top: 0;
+    }
+
+    .reservation-section button {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
 /* Footer */
 footer {
     background-color: #000;
@@ -1001,7 +1036,6 @@ footer p {
         align-items: center;
     }
     .footer-container {
-        display: flex;
         text-align: left;
         width: 689px;
         height: 200px;
@@ -1015,5 +1049,25 @@ footer p {
 
     .footer-text {
         padding-left: 200px;
+    }
+}
+
+@media (min-width: 1440px) {
+    footer {
+        height: 248px;
+    }
+
+    .footer-container {
+        margin-top: 70px;
+        width: 1110px;
+    }
+
+    .footer-text {
+        display: flex;
+    }
+
+    .footer-text p {
+        padding-left: 70px;
+        padding-right: 70px;
     }
 }
