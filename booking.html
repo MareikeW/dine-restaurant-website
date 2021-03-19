@@ -23,32 +23,36 @@
   </section>
   
   <section class="form-section">
-    <form action="#">
-      <input type="text" name="name" id="name">
-      <input type="email" name="email" id="email">
-      <label for="dob">Pick a date
+    <form action="#" class="booking-form">
+      <input type="text" name="name" id="name" placeholder="Name">
+      <input type="email" name="email" id="email" placeholder="Email">
+      <br>
+      <p>Pick a date</p>
+
+      <div class="form-date">
         <input type="number" name="month" id="month" placeholder="MM">
         <input type="number" name="day" id="day" placeholder="DD">
         <input type="number" name="year" id="year" placeholder="YYYY">
-      </label>
-      <label for="time">Pick a time
-        <input type="number" name="hours" id="hours">
-        <input type="number" name="minutes" id="minutes">
+      </div>
+        <br>
+      <p>Pick a time</p>
+      <div class="form-time">
+        <input type="number" name="hours" id="hours" placeholder="09">
+        <input type="number" name="minutes" id="minutes" placeholder="00">
         <select name="dayNight" id="dayNight">
           <option value="AM">AM</option>
           <option value="PM">PM</option>
         </select>
-      </label>
+      </div>
+      <div class="guests">
+        <button>-</button>
+        <p>4 people</p>
+        <button>+</button>
+      </div>
+        <button class="reservation-button">Make Reservation</button>
     </form>
   </section>
   
-
-
-
-  Name
-  Email
-  Pick a date
-  Pick a time
 
   Make Reservation
 

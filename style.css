@@ -1117,3 +1117,109 @@ footer p {
     margin-top: 32px;
     font-weight: 600;
 }
+
+/* Form Section */
+.form-section {
+    background-color: #fff;
+    height: 650px;
+}
+
+.booking-form {
+    margin: 0 auto;
+    width: 327px;
+    height: 585px;
+    position: relative;
+    margin-top: -140px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.booking-form input {
+    border: none;
+    width: 263px;
+    height: 45px;
+    border-bottom: solid 1px #8e8e8e;
+    font-size: 18px;
+    padding: 0.5em;
+    margin-top: 32px;
+}
+
+.booking-form p {
+    text-align: left;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.booking-form p:last-of-type {
+    margin-top: 0;
+}
+
+.form-date {
+    width: 263px;
+    margin: 0 auto;
+}
+
+.form-date input {
+    width: 73px;
+    margin-top: 0;
+    margin: 3.2px; 
+}
+
+.form-date input:last-of-type {
+    width: 88px;
+}
+
+.form-time {
+    width: 263px;
+    height: 45px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.form-time input {
+    width: 73px;
+    margin-top: 0;
+    margin: 3.2px; 
+}
+
+.form-time select {
+    width: 88px;
+    border: none;
+    border-bottom: 1px solid #8e8e8e;
+    height: 45px;
+    font-size: 18px;
+}
+
+.guests {
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 1px solid #8e8e8e;
+    margin-bottom: 32px;
+    width: 263px;
+    height: 45px;
+}
+
+.guests p {
+    margin-left: 0;
+    font-weight: 600;
+    
+}
+
+.guests button {
+    background-color: #fff;
+    border: none;
+    margin: 0 auto;
+}
+
+.reservation-button {
+    width: 263px;
+    height: 64px;
+    background-color: #111;
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 400;
+}
