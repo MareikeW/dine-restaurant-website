@@ -10,11 +10,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
 }
 
 /* Typography */
 h1 {
-    font-family: 'Spartan', sans-serif;
     font-size: 64px;
     line-height: 72px;
     letter-spacing: -0.8;
@@ -22,7 +22,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Spartan', sans-serif;
     font-size: 40px;
     line-height: 56px;
     letter-spacing: -0.5;
@@ -30,7 +29,6 @@ h2 {
 }
 
 h3 .long {
-    font-family: 'Spartan', sans-serif;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: -0.22;
@@ -38,7 +36,6 @@ h3 .long {
 }
 
 h3 .short {
-    font-family: 'Spartan', sans-serif;
     font-size: 14px;
     line-height: 28px;
     letter-spacing: 2;
@@ -47,7 +44,6 @@ h3 .short {
 }
 
 body {
-    font-family: 'Spartan', sans-serif;
     font-size: 18px;
     line-height: 30px;
     letter-spacing: -0.22;
@@ -1070,4 +1066,54 @@ footer p {
         padding-left: 70px;
         padding-right: 70px;
     }
+}
+
+
+/* BOOKING PAGE */
+/* Hero Section Booking */
+.hero-booking-section {
+    height: 600px;
+    width: 375px;
+    background-image: url(./images/booking/hero-bg-mobile.jpg);
+    position: relative;
+    background-color: #000;
+}
+
+.hero-booking-text {
+    position: absolute;
+    width: 327px;
+    height: 316px;
+    text-align: center;
+    top: 56px;
+    color: #fff;
+    left: 24px;
+}
+
+.hero-booking-subtitle {
+    font-weight: 300;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+}
+
+.hero-booking-paragraph {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: -0.19px;
+}
+
+.hero-booking-button {
+    background-color: var(--primary-cod-gray);
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 64px;
+    width: 245px;
+    letter-spacing: 2px;
+    margin-top: 32px;
+    font-weight: 600;
 }
