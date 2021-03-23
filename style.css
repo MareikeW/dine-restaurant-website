@@ -1118,10 +1118,91 @@ footer p {
     font-weight: 600;
 }
 
+@media (min-width: 768px) {
+    .hero-booking-section {
+        width: 768px;
+        background-image: url(./images/booking/hero-bg-tablet.jpg);
+        position: relative;
+    }
+    
+    .hero-booking-text {
+        position: unset;
+        margin: 0 auto;
+        width: 550px;
+        text-align: center;
+        top: 56px;
+        padding-top: 160px;
+    }
+
+    .hero-booking-text img {
+        position: absolute;
+        left: 39px;
+        top: 56px;
+    }
+    
+    .hero-booking-subtitle {
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: -0.6px;
+        margin-top: -5px;
+    }
+    
+    .hero-booking-paragraph {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.22px;
+    }
+    
+    .hero-booking-button {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero-booking-section {
+        width: 1440px;
+        background-image: url(./images/booking/hero-bg-desktop.jpg);
+        position: relative;
+    }
+    
+    .hero-booking-text {
+        position: unset;
+        margin: 0 auto;
+        width: 550px;
+        text-align: center;
+        top: 56px;
+        padding-top: 160px;
+    }
+
+    .hero-booking-text img {
+        position: absolute;
+        left: 165px;
+        top: 56px;
+    }
+    
+    .hero-booking-subtitle {
+        position: absolute;
+        left: 165px;
+        top: 258px;
+    }
+    
+    .hero-booking-paragraph {
+        position: absolute;
+        left: 165px;
+        top: 332px;
+        width: 445px;
+        text-align: left;
+    }
+}
+
 /* Form Section */
 .form-section {
-    background-color: #fff;
     height: 650px;
+    background-color: #fff;
+}
+
+.form-stripes {
+    display: none;
 }
 
 .booking-form {
@@ -1132,6 +1213,9 @@ footer p {
     margin-top: -140px;
     text-align: center;
     background-color: #fff;
+    -webkit-box-shadow: -1px 6px 15px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 15px -7px rgba(0,0,0,0.75);
+    box-shadow: -1px 6px 15px -7px rgba(0,0,0,0.75);
 }
 
 .booking-form input {
@@ -1142,12 +1226,18 @@ footer p {
     font-size: 18px;
     padding: 0.5em;
     margin-top: 32px;
+    letter-spacing: -0.22px;
+    line-height: 28px;
 }
 
 .booking-form p {
     text-align: left;
     margin-top: 32px;
     margin-left: 32px;
+}
+
+.date-heading {
+    padding-top: 32px;
 }
 
 .booking-form p:last-of-type {
@@ -1222,4 +1312,123 @@ footer p {
     text-transform: uppercase;
     border: none;
     font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .booking-form {
+        width: 540px;
+        height: 545px;
+        margin-top: -230px;
+    }
+    
+    .booking-form input {
+        width: 444px;
+    }
+    
+    .booking-form p {
+        text-align: left;
+        margin-top: 32px;
+        margin-left: 32px;
+    }
+
+    .form-flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+
+    .flex-heading {
+        padding: 1em; 
+    }
+
+    .date-heading {
+        padding-bottom: 0;
+        width: 125px;
+        padding-right: 0;
+    }
+    
+    .form-date {
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .form-date input {
+        width: 80px;
+        margin-top: 0;
+        margin: 3.2px; 
+    }
+    
+    .form-date input:last-of-type {
+        width: 97px;
+    }
+    
+    .form-time {
+        width: 300px;
+        margin-left: 25px;
+    }
+
+    .time-container {
+        margin-top: 0;
+    }
+    
+    .form-time input {
+        width: 80px;
+    }
+    
+    .form-time select {
+        width: 97px;
+    }
+    
+    .guests {
+        width: 444px;
+        height: 45px;
+    }
+    
+    .guests p {
+        margin-left: 0;
+        font-weight: 600;
+        
+    }
+    
+    .guests button {
+        background-color: #fff;
+        border: none;
+        margin: 0 auto;
+    }
+    
+    .reservation-button {
+        width: 444px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .form-container {
+        position: absolute;
+        top: -110px;
+        right: 165px;
+        z-index: 2;
+    }
+
+    .form-section {
+        height: 320px;
+        position: relative;
+    }
+
+    .form-section::after {
+        content: "";
+        background-color: #5c6779;
+        opacity: 0.08;
+        height: 320px;
+        width: 993px;
+        position: absolute;
+        border-bottom-right-radius: 100px;
+    }
+
+    .form-stripes {
+        position: absolute;
+        top: 165px;
+        left: 665px;
+        z-index: 0;
+        display: block;
+    }
 }

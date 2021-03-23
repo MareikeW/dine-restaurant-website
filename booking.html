@@ -13,58 +13,80 @@
   <section class="hero-booking-section">
     <div class="hero-booking-text">
       <img src="./images/logo.svg" alt="dine">
-      <h1 class="hero-booking-subtitle">Reservations</h1>
-      <p class="hero-booking-paragraph">
-        We can’t wait to host you. If you have any special requirements please feel free to 
-        call on the phone number below. We’ll be happy to accommodate you.
-      </p>
-      <button class="hero-booking-button">Reserve Place</button>
-    </div>
-  </section>
-  
-  <section class="form-section">
-    <form action="#" class="booking-form">
-      <input type="text" name="name" id="name" placeholder="Name">
-      <input type="email" name="email" id="email" placeholder="Email">
-      <br>
-      <p>Pick a date</p>
-
-      <div class="form-date">
-        <input type="number" name="month" id="month" placeholder="MM">
-        <input type="number" name="day" id="day" placeholder="DD">
-        <input type="number" name="year" id="year" placeholder="YYYY">
+      
+        <div>
+          <h1 class="hero-booking-subtitle">Reservations</h1>
+          <p class="hero-booking-paragraph">
+            We can’t wait to host you. If you have any special requirements please feel free to 
+            call on the phone number below. We’ll be happy to accommodate you.
+          </p>
+          <button class="hero-booking-button">Reserve Place</button>
+        </div>
       </div>
+    </section>
+    
+    <section class="form-section">
+      <div class="form-container">
+      <form action="#" class="booking-form">
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
         <br>
-      <p>Pick a time</p>
-      <div class="form-time">
-        <input type="number" name="hours" id="hours" placeholder="09">
-        <input type="number" name="minutes" id="minutes" placeholder="00">
-        <select name="dayNight" id="dayNight">
-          <option value="AM">AM</option>
-          <option value="PM">PM</option>
-        </select>
+        
+        <div class="form-flex-container">
+          <p class="flex-heading date-heading">Pick a date</p>
+          <div class="form-date">
+            <input type="number" name="month" id="month" placeholder="MM" required>
+            <input type="number" name="day" id="day" placeholder="DD" required>
+            <input type="number" name="year" id="year" placeholder="YYYY" required>
+          </div>
+        </div>
+          <br>
+        <div class="form-flex-container time-container">
+        <p class="flex-heading">Pick a time</p>
+        <div class="form-time">
+          <input type="number" name="hours" id="hours" placeholder="09" required>
+          <input type="number" name="minutes" id="minutes" placeholder="00" required>
+          <select name="dayNight" id="dayNight" required>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
       </div>
-      <div class="guests">
-        <button>-</button>
-        <p>4 people</p>
-        <button>+</button>
-      </div>
-        <button class="reservation-button">Make Reservation</button>
-    </form>
+
+        <div class="guests">
+          <button>-</button>
+          <p>4 people</p>
+          <button>+</button>
+        </div>
+          <button class="reservation-button">Make Reservation</button>
+      </form>
+    </div>
+    <img src="./images/patterns/pattern-lines.svg" alt="Six horizontal stripes" class="form-stripes" />
   </section>
   
+  <footer>
+    <div class="footer-container"> 
+      <div class="footer-logo">
+        <img src="./images/logo.svg" alt="dine logo"/>
+      </div>
+      <div class="footer-text">
 
-  Make Reservation
-
-
-
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
-
+        <p >
+          Marthwaite, Sedbergh
+          <br>
+          Cumbria
+          <br>
+          +00 44 123 4567
+        </p>
+        <p >
+          Open Times
+          <br>
+          Mon - Fri: 09:00 AM - 10:00 PM
+          <br>
+          Sat - Sun: 09:00 AM - 11:30 PM
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
