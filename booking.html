@@ -12,7 +12,7 @@
 <body>
   <section class="hero-booking-section">
     <div class="hero-booking-text">
-      <img src="./images/logo.svg" alt="dine">
+      <a href="./index.html"><img src="./images/logo.svg" alt="dine"></a>
       
         <div>
           <h1 class="hero-booking-subtitle">Reservations</h1>
@@ -27,26 +27,35 @@
     
     <section class="form-section">
       <div class="form-container">
-      <form action="#" class="booking-form">
-        <input type="text" name="name" id="name" placeholder="Name" required>
-        <input type="email" name="email" id="email" placeholder="Email" required>
+      <form action="#" class="booking-form" id="booking-form">
+        <div id="name-input-container">
+          <input type="text" name="name" id="name" placeholder="Name">
+          <small id="name-error-text">This field is required</small>
+        </div>
+
+        <div id="email-input-container">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <small id="email-error-text">This field is required</small>
+        </div>
         <br>
         
-        <div class="form-flex-container">
-          <p class="flex-heading date-heading">Pick a date</p>
+        <div class="form-flex-container" id="date-input-container">
+          <p class="flex-heading date-heading" id="date-heading">Pick a date</p>
+          <small id="date-error-text">This field is incomplete</small>
           <div class="form-date">
-            <input type="number" name="month" id="month" placeholder="MM" required>
-            <input type="number" name="day" id="day" placeholder="DD" required>
-            <input type="number" name="year" id="year" placeholder="YYYY" required>
+            <input type="number" name="month" id="month" placeholder="MM">
+            <input type="number" name="day" id="day" placeholder="DD">
+            <input type="number" name="year" id="year" placeholder="YYYY">
           </div>
         </div>
           <br>
-        <div class="form-flex-container time-container">
-        <p class="flex-heading">Pick a time</p>
+        <div class="form-flex-container time-container" id="time-input-container">
+        <p class="flex-heading" id="time-heading">Pick a time</p>
+        <small id="time-error-text">This field is incomplete</small>
         <div class="form-time">
-          <input type="number" name="hours" id="hours" placeholder="09" required>
-          <input type="number" name="minutes" id="minutes" placeholder="00" required>
-          <select name="dayNight" id="dayNight" required>
+          <input type="number" name="hours" id="hours" placeholder="09">
+          <input type="number" name="minutes" id="minutes" placeholder="00">
+          <select name="dayNight" id="dayNight">
             <option value="AM">AM</option>
             <option value="PM">PM</option>
           </select>
@@ -54,9 +63,9 @@
       </div>
 
         <div class="guests">
-          <button>-</button>
-          <p>4 people</p>
-          <button>+</button>
+          <button id="minus-guest-button">-</button>
+          <p><span id="guest-number">4</span> people</p>
+          <button id="plus-guest-button">+</button>
         </div>
           <button class="reservation-button">Make Reservation</button>
       </form>
@@ -88,5 +97,6 @@
       </div>
     </div>
   </footer>
+  <script src="./index.js"></script>
 </body>
 </html>

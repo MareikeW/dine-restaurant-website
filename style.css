@@ -1272,12 +1272,47 @@ footer p {
     margin: 3.2px; 
 }
 
+.input-error {
+    position: relative;
+    padding: 0.1em;
+}
+
+#name-error-text,
+#email-error-text,
+#date-error-text,
+#time-error-text {
+    display: none;
+    position: absolute;
+    left: 55px;
+    font-size: 0.5em;
+    letter-spacing: -0.5px;
+    color: #B54949;
+    font-weight: 600;
+}
+
+#date-error-text,
+#time-error-text {
+    top: 40px;
+}
+
+#date-input-container {
+    margin-top: 0;
+}
+
+.input-placeholder::placeholder {
+    color: #B54949;
+}
+
 .form-time select {
     width: 88px;
     border: none;
     border-bottom: 1px solid #8e8e8e;
     height: 45px;
     font-size: 18px;
+}
+
+.form-time option {
+    border: none;
 }
 
 .guests {
