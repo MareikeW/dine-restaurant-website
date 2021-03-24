@@ -193,7 +193,6 @@ button {
 }
 
 .info-img {
-    z-index: 5;
     margin-top: -80px;
     width: 327px;
     height: 400px;
@@ -202,6 +201,7 @@ button {
 
 #info-img-first {
     background-image: url(./images/homepage/enjoyable-place-mobile.jpg);
+
 }
 
 #info-img-second {
@@ -249,13 +249,14 @@ button {
     .info-img {
         width: 573px;
         height: 360px;
+        z-index: 8;
     }
 
     #info-img-first {
         background-image: url(./images/homepage/enjoyable-place-tablet.jpg);
     }
 
-    #info-img-first::after {
+    .info-card-one::after {
         content: "";
         background-color: var(--dark-grayish-blue);
         width: 384px;
@@ -275,7 +276,7 @@ button {
         background-image: url(./images/homepage/locally-sourced-tablet.jpg);
     }
 
-    #info-img-second::after {
+    .info-card-two::after {
         content: "";
         background-color: var(--dark-grayish-blue);
         width: 384px;
@@ -329,7 +330,7 @@ button {
         left: 165px;
     }
 
-    #info-img-first::after {
+    .info-card-one::after {
         width: 895px;
         left: -165px;
         top: 250px;
@@ -343,7 +344,7 @@ button {
         margin-top: -40px;
     }
 
-    #info-img-second::after {
+    .info-card-two::after {
         width: 895px;
         bottom: 0px;
         right: -165px;
@@ -682,9 +683,29 @@ button {
         position: relative;
     }
 
+    .events-layout {
+        position: relative;
+        width: 573px;
+        height: 360px;
+        z-index: 200;
+    }
+
     .event-images {
         margin-bottom: 40px;
         margin-left: 97px;
+        z-index: 1;
+    } 
+
+    .event-images::after {
+        content: "";
+        background-color: var(--dark-grayish-blue);
+        width: 500px;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.08;
+        border-top-right-radius: 100px;
     }
 
     .event-stripes {
@@ -717,11 +738,6 @@ button {
         line-height: 30px;
         letter-spacing: -0.22px;
     }
-
-    .events-layout {
-        width: 573px;
-        height: 360px;
-    }
     
     #event-family {
         background-image: url(./images/homepage/family-gathering-tablet.jpg);
@@ -746,6 +762,7 @@ button {
         display: flex;
         justify-content: center;
         align-content: center;
+        height: 920px;
     }
 
     .event-stripes {
@@ -762,7 +779,6 @@ button {
         "image . list";
         grid-column-gap: 65px;
         height: 600px;
-        margin-bottom: 160px;
         margin-top: 60px;   
     }
 
