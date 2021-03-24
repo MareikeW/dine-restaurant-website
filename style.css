@@ -789,10 +789,14 @@ button {
         height: 600px;
     }
 
+    .event-list-item {
+        margin: 0;
+    }
+
     .event-list-container {
         grid-area: list;
         flex-direction: column;
-        height: 108px;
+        height: 120px;
         text-align: left;
     }
     
