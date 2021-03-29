@@ -53,6 +53,12 @@ body {
     }
 }
 
+@media(min-width: 1024px) {
+    body {
+        min-width: 1024px;
+    }
+}
+
 @media (min-width: 1440px) {
     body {
         min-width: 1440px;
@@ -143,6 +149,17 @@ button {
     }
 }
 
+@media (min-width: 1024px) {
+    .hero-section {
+        background-size: cover;
+    }
+
+    .hero-text {
+        left: 220px;
+        top: 430px;
+    }
+}
+
 @media (min-width: 1440px) {
     .hero-section {
         height: 820px;
@@ -157,7 +174,7 @@ button {
 
     .hero-text img {
         position: absolute;
-        top: -233px;
+        top: -153px;
     }
 
     .hero-subtitle {
@@ -331,9 +348,9 @@ button {
     }
 
     .info-card-one::after {
-        width: 895px;
-        left: -165px;
-        top: 250px;
+        width: 960px;
+        left: -65px;
+        top: 170px;
         border-top-right-radius: 80px;
     }
     
@@ -345,9 +362,9 @@ button {
     }
 
     .info-card-two::after {
-        width: 895px;
+        width: 917px;
         bottom: 0px;
-        right: -165px;
+        right: -10px;
     }
 
     #info-card-text-one {
@@ -359,7 +376,7 @@ button {
 
     #info-card-text-two {
         position: absolute;
-        bottom: 200px;
+        bottom: 240px;
         left: 150px;
         text-align: left;
     }
@@ -1024,6 +1041,13 @@ footer p {
     
     .hero-booking-button {
         display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-booking-section {
+        width: 1024px;
+        background-size: cover;
     }
 }
 
